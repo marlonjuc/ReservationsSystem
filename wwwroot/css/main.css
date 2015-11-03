@@ -1,0 +1,1260 @@
+/*font face*/
+
+
+
+@font-face {
+
+    font-family: 'GothamBook';
+
+    src: url('../fonts/GothamBook.eot');
+
+    src: url('../fonts/GothamBook.eot?#iefix') format('embedded-opentype'),
+
+         url('../fonts/GothamBook.woff') format('woff'),
+
+         url('../fonts/GothamBook.ttf') format('truetype');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+
+
+@font-face {
+
+    font-family: 'GothamBold';
+
+    src: url('../fonts/GothamBold.eot');
+
+    src: url('../fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
+
+         url('../fonts/GothamBold.woff') format('woff'),
+
+         url('../fonts/GothamBold.ttf') format('truetype');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+
+
+@font-face {
+
+    font-family: 'GothamLight';
+
+    src: url('../fonts/GothamLight.eot');
+
+    src: url('../fonts/GothamLight.eot?#iefix') format('embedded-opentype'),
+
+         url('../fonts/GothamLight.woff') format('woff'),
+
+         url('../fonts/GothamLight.ttf') format('truetype');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+
+
+@font-face {
+
+    font-family: 'GothamMedium';
+
+    src: url('../fonts/GothamMedium.eot');
+
+    src: url('../fonts/GothamMedium.eot?#iefix') format('embedded-opentype'),
+
+         url('../fonts/GothamMedium.woff') format('woff'),
+
+         url('../fonts/GothamMedium.ttf') format('truetype');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+
+
+body {
+
+    background: #FFFFFF;
+
+    color: #6b5e51;
+
+    font-size: 1em;
+
+    font-family: "GothamBook", arial;
+
+    line-height: 1.4;
+
+    overflow-x: scroll;
+
+}
+
+
+
+h1{
+
+    font-family: "GothamBold", arial;
+
+    font-size:30px;
+
+    float:left;
+
+    margin-top:6px;
+
+    margin-left:20px;
+
+    margin-right:48px;
+
+}
+
+
+
+h2{
+
+    width:400px;
+
+    font-family: "GothamBold", arial;
+
+    font-size:24px;
+
+    float:left;
+
+    margin-top:12px;
+
+}
+
+
+
+h4{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+    font-family: "GothamLight", arial;
+
+    font-size:13px;
+
+    text-align:center;
+
+}
+
+
+
+.header{
+
+    height:52px;
+
+    width:100%;
+
+    color:#FFFFFF;
+
+    position:fixed;
+
+    top:0px;
+
+    left:0px;
+
+    z-index:20;
+
+}
+
+
+
+.headerIcon{
+
+    width:36px;
+
+    height: 32px;
+
+    background: url('../img/ui/calendar/header_icon.png') no-repeat;
+
+    background-position: left 0px top 0px;
+
+    margin-top:10px;
+
+    margin-bottom:10px;
+
+    margin-right:10px;
+
+    float:left;
+
+}
+
+
+
+.homeIcon{
+
+    margin-top:12px;
+
+    float:left;
+
+    position:absolute;
+
+    left:0px;
+
+    display:none;
+
+}
+
+
+
+.homeIcon:hover{
+
+    -webkit-border-radius: 3px;
+
+    -moz-border-radius: 3px;
+
+    border-radius: 3px; 
+
+    -moz-box-shadow: 1px 1px 5px #2e2e2e;
+
+    -webkit-box-shadow: 1px 1px 5px #2e2e2e;
+
+    box-shadow: 1px 1px 5px #2e2e2e;
+
+}
+
+
+
+
+
+#container{
+
+    width:270px;
+
+    height:100%;
+
+    float:left;
+
+    top:66px;
+
+    left:0;
+
+    position:absolute;
+
+    background: #FFFFFF;
+
+}
+
+
+
+#tableContainer{
+
+    float:left;
+
+    margin-right:20px;
+
+    position:relative;
+
+    top:0px;
+
+    left:285px;
+
+}
+
+
+
+#carousel{
+
+   opacity:1;
+
+   position:absolute;
+
+   top:66px;
+
+   width: 100%;
+   
+   min-width:100%;
+
+}
+
+
+
+/*Homepage Styles*/
+
+
+
+#wrapper{
+
+    width: 1124px;
+
+    margin: 0 auto;
+
+    margin-top:185px;
+
+}
+
+
+
+.section{
+
+    height:175px;
+
+    margin-left:17%;
+
+    width:100%;
+
+    opacity:0;
+
+}
+
+
+
+.floor{
+
+    background-position: left 0px top 0px; 
+
+    width:142px;
+
+    height:82px;
+
+    text-align:center;
+
+    float:left;
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+
+
+.floor_1{
+
+    background: url('../img/ui/homepage/light_red_button.jpg') no-repeat;
+
+}
+
+
+
+.floor_2{
+
+    background: url('../img/ui/homepage/dark_red_button.jpg') no-repeat;
+
+}
+
+
+
+.floor_3{
+
+    background: url('../img/ui/homepage/light_orange_button.jpg') no-repeat;
+
+}
+
+
+
+.floor_4{
+
+    background: url('../img/ui/homepage/dark_orange_button.jpg') no-repeat;
+
+}
+
+
+
+.floor_5{
+
+    background: url('../img/ui/homepage/light_green_button.jpg') no-repeat;
+
+    top:-82px;
+
+    left:426px;
+
+    /*left:426px; remove comments when doctors reservation needed*/
+
+}
+
+
+
+.floor_6{
+
+    background: url('../img/ui/homepage/dark_purple_button.jpg') no-repeat;
+
+    top:84px;
+
+    left:-214px;
+
+
+}
+
+
+
+.floor_7{
+
+    background: url('../img/ui/homepage/light_purple_button.jpg') no-repeat;
+
+    top:84px;
+
+    left:-498px;
+
+    z-index: 90;
+
+}
+
+
+
+.floor_8{
+
+    background: url('../img/ui/homepage/dark_wine_button.jpg') no-repeat;
+
+    top:84px;
+
+    left:-356px;
+
+    z-index: 91;
+
+}
+
+
+
+.floor_9{
+
+    background: url('../img/ui/homepage/light_blue_button.jpg') no-repeat;
+
+    top:2px;
+
+    left:70px;
+
+    display:none; /*remove comments when doctor eservations needed*/
+
+}
+
+.floor_11{
+
+    background: url('../img/ui/homepage/dark_green_button.jpg') no-repeat;
+
+    top:2px;
+
+    left:70px;
+
+
+}
+
+
+
+.singleFloor{
+
+    top:40px;
+
+    left:290px;
+
+}
+
+
+
+.section a, a:visited{
+
+    font-family: "GothamBook", arial;
+
+    color: #FFFFFF;
+
+    font-size: 15px;
+
+    text-decoration: none;
+
+    width:85%;
+
+    height:50%;
+
+    margin-top:18%;
+
+    position:relative;
+
+    display: inline-block;
+
+}
+
+
+
+.floor_4 a{
+
+   top:-6px;
+
+}
+
+
+
+.floor_9 a{
+
+   top:-6px;
+
+}
+
+
+
+.octagon {
+
+    width:inherit;
+
+}
+
+
+
+.section a:hover{
+
+   text-decoration: underline;
+
+}
+
+
+
+.logo{
+
+    background: url('../img/ui/homepage/prodigious_latam_logo.png') no-repeat;
+
+    background-position: left 0px top 0px; 
+
+    width:297px;
+
+    height:93px;
+
+    margin-bottom:10px;
+
+    margin: 0 36%;
+
+}
+
+
+
+.separator{
+
+    background: url('../img/ui/homepage/separator.jpg') no-repeat;
+
+    background-position: left 0px top 0px; 
+
+    width:1124px;
+
+    height:12px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.top_paint{
+
+    background: url('../img/ui/homepage/top_abstract_paint.png') no-repeat;
+
+    background-position: left 0px top 0px; 
+
+    width:178px;
+
+    height:50px; 
+
+    position:relative;
+
+    top:-44px;
+
+    left:132px;
+
+    float:left;
+
+}
+
+
+
+.bottom_paint{
+
+    background: url('../img/ui/homepage/bottom_abstract_paint.png') no-repeat;
+
+    background-position: left 0px top 0px;
+
+    width:280px;
+
+    height:75px; 
+
+    position:relative;
+
+    top:-78px;
+
+    left:665px;
+
+    float:left;
+
+}
+
+
+
+/*Date Picker jQueryUI Widget*/
+
+
+
+#datepicker{
+
+    position:relative;
+
+    top:0px;
+
+    left:20px;
+
+    width:auto;
+
+    z-index:17;   
+
+}
+
+
+
+.ui-datepicker{
+
+    
+
+}
+
+
+
+.ui-widget{
+
+   font-family: "GothamBook", arial;
+
+   font-size:14px;
+
+}
+
+
+
+.ui-widget-header{
+
+    color:#FFFFFF;
+
+    background: url('') no-repeat;
+
+    font-family: "GothamBook", arial;
+
+    font-size:14px;
+
+    border-top-right-radius:0px;
+
+    border-top-left-radius:0px;
+
+    border-bottom-right-radius:0px;
+
+    border-bottom-left-radius:0px;
+
+    position:relative;
+
+    left:-4px;
+
+    top:-4px;
+
+    width:244px;
+
+}
+
+
+
+.ui-datepicker .ui-state-default{
+
+    border: 1px solid #FFFFFF;
+
+    background-image:none;
+
+    background-color: #FFFFFF;
+
+    color:#000000;
+
+}
+
+
+
+.ui-datepicker .ui-state-active{
+
+    border: 1px solid #000000;
+
+    background-image:none;
+
+    background-color: #8d8d8d;
+
+}
+
+
+
+.ui-datepicker .ui-state-hover{
+
+    border: 1px solid #000000;
+
+    background-image:none;
+
+    background-color: #FFFFFF;
+
+}
+
+
+
+.ui-datepicker .ui-state-highlight{
+
+    border: 1px solid #b3b3b3;
+
+    background-image:none;
+
+    color:#FFFFFF;
+
+}
+
+
+
+tbody .ui-datepicker-week-end{ 
+
+    color:#7a8686;
+
+}
+
+
+
+.ui-datepicker .ui-icon{
+
+     background-image:none;
+
+}
+
+
+
+.ui-datepicker .ui-datepicker-prev{
+
+    background: url('../img/ui/calendar/prev_arrow.png') no-repeat;
+
+    background-position: left 4px top 4px;
+
+}
+
+
+
+.ui-datepicker .ui-datepicker-next{
+
+    background: url('../img/ui/calendar/next_arrow.png') no-repeat;
+
+    background-position: left 4px top 4px;
+
+}
+
+
+
+.ui-datepicker .ui-datepicker-next-hover{
+
+     border: 1px solid #FFFFFF;
+
+}
+
+
+
+.ui-datepicker .ui-datepicker-prev-hover{
+
+     border: 1px solid #FFFFFF;
+
+}
+
+
+
+.ui-widget-content{
+
+    border: 1px solid #f33e13;
+
+    border-top-right-radius:0px;
+
+    border-top-left-radius:0px;
+
+}
+
+
+
+.whiteBorderMask{
+
+    position:relative;
+
+    top:0px;
+
+    left:0px;
+
+    width:640px;
+
+    height:16px;
+
+    background-color: #FFFFFF;
+
+    z-index:18;   
+
+    float:left; 
+
+}
+
+
+
+.mobileWeekSelector{
+
+    position:relative;
+
+    top:0px;
+
+    left:20px;
+
+    width:600px;
+
+    height:34px;
+
+    background-color: #000000;
+
+    z-index:19;
+
+    cursor: pointer;    
+
+    float:left;
+
+    padding: 4px 5px;
+
+    font-family: "GothamBold", arial;
+
+    color: #FFFFFF;
+
+    letter-spacing:1px;
+
+    text-align:center;
+
+    line-height:34px;
+
+    font-size: 24px;    
+
+    border: 1px solid #FFFFFF;   
+
+    opacity:0; 
+
+    
+
+    -webkit-border-radius: 3px;
+
+    -moz-border-radius: 3px;
+
+    border-radius: 3px; 
+
+   
+
+    -webkit-box-shadow:0 0 0 1px #FFFFFF inset, 0 0 0 0 #FFFFFF, 0 0 0 0 #FFFFFF;
+
+    -moz-box-shadow:0 0 0 1px #FFFFFF inset, 0 0 0 0 #FFFFFF, 0 0 0 0 #FFFFFF;
+
+    box-shadow:0 0 0 1px #FFFFFF inset, 0 0 0 0 #FFFFFF, 0 0 0 0 #FFFFFF;
+
+   
+
+}
+
+
+
+.arrow{
+
+    background: url('../img/ui/calendar/down_arrow_mobile.png') no-repeat;
+
+    background-position: left 0px top 0px;
+
+    width:34px;
+
+    height:18px;
+
+    position: relative;
+
+    top:8px;
+
+    float:right;
+
+    margin-right:14px;
+
+}
+
+
+
+/*DataBase HTML Tables*/
+
+
+
+table{
+
+     padding:0;
+
+     border-spacing:0;
+
+     border-collapse: separate !important;
+
+}
+
+
+
+.db-table{
+
+    font-family: "GothamBook", arial;
+
+    width:100%;
+
+    border-spacing:0;
+
+}
+
+
+
+caption{
+
+    width:100%;
+
+    height:30px;
+
+    color: #FFFFFF;
+
+    font-family: "GothamBook", arial;
+
+    font-size:14px;
+
+    text-align:center;
+
+    line-height:30px;
+
+}
+
+
+
+.db-table th {
+
+    height:58px; 
+
+    border:1px solid #FFFFFF;
+
+    color: #FFFFFF;
+
+}
+
+
+
+.db-table th img{
+
+    margin:0;
+
+    display: block;
+
+    padding: 0;
+
+    vertical-align: top;
+
+    float: left;
+
+}
+
+
+
+.db-table td {
+
+    font-size:14px;
+
+    color: #FFFFFF;
+
+    vertical-align:middle;
+
+    text-align:center; 
+
+}
+
+
+
+.db-table td.block {
+
+   border:1px solid #FFFFFF;
+
+}
+
+
+
+.clock{
+
+    width:48px;
+
+    background: url('../img/ui/calendar/clock_icon.png') no-repeat; overflow: visible;
+
+    background-position: left 0px top 0px;
+
+}
+
+
+
+/*Cells */
+
+
+
+.modify{
+
+    /*width:38px;*/
+    width:100%;
+   background-position:50% 6px !important; /*Remove this line to use bg position placed on each individual .css*/
+
+    height:30px;
+
+    position:relative;
+
+}
+
+
+
+.add, .add-disabled{
+    
+    width:100%;
+    /*width:38px;*/
+
+    height:30px;
+
+    position:relative;
+
+    background: url('../img/ui/calendar/add_icon.png') no-repeat; overflow: visible;
+
+    /*background-position: left 10px top 8px;*/
+    background-position:center;
+
+    cursor:pointer;
+
+    /*background-position-x: 10px;
+
+    background-position-y: 8px;*/
+
+}
+
+
+
+.add-disabled{
+
+    cursor:default;
+
+}
+
+
+
+/*Info Panel */
+
+
+
+#infoPanel{
+
+    width:245px;
+
+    height:auto;
+
+    position:relative;
+
+    float:left;
+
+    top:0px;
+
+    left:20px;
+
+    margin-top:16px;
+
+}
+
+
+
+#content{
+
+   width:95%;
+
+   height:auto;
+
+   text-align:left;
+
+   margin-left:8px;
+
+   margin-top: 18px;
+
+   margin-bottom:10px;
+
+}
+
+
+
+.infoPanelHeader{
+
+    width:100%;
+
+    height:28px;
+
+    position:relative;
+
+    font-family: "GothamBook", arial;
+
+    color: #FFFFFF;
+
+    text-align:center;
+
+    line-height: 28px;
+
+}
+
+
+
+.infoPanelFooter{
+
+    width:100%;
+
+    height:72px;
+
+    position:relative;
+
+    font-family: "GothamBook", arial;
+
+    color: #FFFFFF;
+
+}
+
+
+
+.infoPanelFooter .title{
+
+    line-height: 36px;
+
+    margin-left:10px;
+
+}
+
+
+
+#infoPanel input{
+
+    width: 100px;
+
+    height: 40%;
+
+    border:none;
+
+    margin-left:30px;
+
+}
+
+
+
+.output{
+
+    position:relative;
+
+    opacity:0;
+
+    left:20px;
+
+    margin-top: 2px; 
+
+    float:left;  
+
+    width:238px;
+
+    height:auto; 
+
+    font-family: "GothamBook", arial;
+
+    font-size:14px;
+
+    line-height:25px;
+
+    padding-left:8px;
+
+}
+
+
+
+.exclamation{
+
+    width:18px;
+
+    height:13px;
+
+    position:relative;
+
+    background-position: left 0px top 0px;
+
+    float:left;
+
+    margin-top:3px;
+
+    margin-right:5px;
+
+}
+
+
+
+.remove{
+
+    width:19px;
+
+    height:25px;
+
+    background: url('../img/ui/calendar/garbage_collector_icon.png') no-repeat;
+
+    background-position: left 0px top 0px;
+
+    float:right;
+
+    margin-top:6px;
+
+    margin-right:20px;
+
+    cursor:pointer;
+
+}
+
+
+
+.labelPanel{
+
+    width:100%;
+
+    float:none;
+
+    position:relative;
+
+    font-family: "GothamBook", arial;
+
+    font-size:14px;
+
+    color: #000000;
+
+}
+
+
+
+.labelPanel b{
+
+    font-size:14px;
+
+    color: #969696;   
+
+}
+
+
+
+.labelEmail{
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+      
+

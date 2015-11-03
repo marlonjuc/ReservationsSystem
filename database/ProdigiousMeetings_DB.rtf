@@ -1,0 +1,274 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww30940\viewh15320\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs36 \cf0 \
+CREATE TABLE Site ( \
+ID INT NOT NULL, \
+Name VARCHAR(100) NOT NULL, \
+PRIMARY KEY(ID)\
+);\
+\
+CREATE TABLE Floor ( \
+ID INT NOT NULL, \
+Name VARCHAR(100) NOT NULL, \
+StylePath VARCHAR(100),\
+SiteID INT NOT NULL,\
+PRIMARY KEY(ID)\
+);\
+\
+CREATE TABLE Room ( \
+ID INT NOT NULL, \
+Name VARCHAR(100) NOT NULL,\
+IconPath VARCHAR(100) NOT NULL,\
+FloorID INT NOT NULL, \
+PRIMARY KEY(ID)\
+);\
+\
+/*Add this two foreigns keys*/\
+ALTER TABLE floor ADD CONSTRAINT FK_Floor FOREIGN KEY (siteID) REFERENCES site(ID);\
+\
+ALTER TABLE room ADD CONSTRAINT FK_Room FOREIGN KEY (floorID) REFERENCES floor(ID);\
+\
+alter table room drop foreign key FK_room;\
+drop index FK_room on room;\
+\
+alter table Reservations change RoomID INT NOT NULL;\
+alter table Reservations change SiteID FloorID INT NOT NULL;\
+alter table global_reservations change room RoomID INT NOT NULL;\
+alter table room change IconPath StylePath INT NOT NULL;\
+\
+ALTER TABLE floor ADD StylePath VARCHAR(100) AFTER Name; \
+\
+INSERT INTO Site (ID, Name) VALUES (1, 'Prodigious Costa Rica');\
+INSERT INTO Site (ID, Name) VALUES (2, 'Prodigious Colombia');\
+\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (1, 'Floor 1', 'css/light_red_style.css',  1);\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (2, 'Floor 2', 'css/dark_red_style.css', 1);\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (3, 'Floor 3', 'css/light_orange_style.css', 1);\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (4, 'Conference Bridge', 'css/dark_orange_style.css', 1);\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (5, 'One Story Plan', 'css/light_green_style.css', 2);\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (6, 'Floor 1 Seats', 'css/dark_purple_style.css', 1);\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (7, 'Floor 2 Seats', 'css/light_purple_style.css', 1);\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (8, 'Floor 3 Seats', 'css/dark_wine_style.css', 1);\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (9, 'Company Doctor', 'css/light_blue_style.css', 1);\
+INSERT INTO floor (ID, Name, StylePath, SiteID) VALUES (10, 'Laptop', '', 1);\
+INSERT INTO Floor (ID, Name, StylePath, SiteID) VALUES (11, 'Motion Lab', 'css/dark_green_style.css', 1);\
+\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (1, 'Fish Room', 'img/fish-room.png', 1);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (2, 'Room 2', 'img/F1_R2.png', 1);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (3, 'Room 3', 'img/F1_R3.png', 1);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (4, 'Training Center', 'img/F1_TrainingRoom.png', 1);\
+INSERT INTO room (ID, Name, IconPath, FloorID) VALUES (30, 'HR Room', 'img/F1_HumanResourcesRoom.png', 1);\
+\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (5, 'Acuarium Room', 'img/aquarium-room.png', 2);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (6, 'Coliseum Room', 'img/coliseum-room.png', 2);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (7, 'Room 3', '', 10);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (8, 'Room 4', '', 10);\
+\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (9, 'Room 1', 'img/F3_R1.png', 3);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (10, 'Mangrove Room', 'img/mangrove-room.png', 3);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (11, 'Room 3 (Ping Pong Table)', 'img/F3_R3.png', 3);\
+\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (12, 'Conference Bridge 1', 'img/conference_1.png', 4);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (13, 'Conference Bridge 2', 'img/conference_2.png', 4);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (14, 'Conference Bridge 3', 'img/conference_3.png', 4);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (15, 'Conference Bridge 4', 'img/conference_4.png', 4);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (16, 'Conference Bridge 5', 'img/conference_5.png', 4);\
+\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (17, 'Einstein', 'img/colombia_einstein_room.png', 5);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (18, 'Newton', 'img/colombia_newton_room.png', 5);\
+\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (19, 'Laptop', '', 10);\
+\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (20, 'Seat 1', 'img/floor1seat_01.png', 6);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (21, 'Seat 2', 'img/floor1seat_02.png', 6);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (22, 'Seat 3', 'img/floor1seat_03.png', 6);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (23, 'Seat 1', 'img/floor2seat_01.png', 7);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (24, 'Seat 2', 'img/floor2seat_02.png', 7);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (25, 'Seat 3', 'img/floor2seat_03.png', 7);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (26, 'Seat 1', 'img/floor3seat_01.png', 8);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (27, 'Seat 2', 'img/floor3seat_02.png', 8);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (28, 'Seat 3', 'img/floor3seat_03.png', 8);\
+\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (29, "Doctor's Office", "img/doctor_office.png", 9);\
+\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (31, "Work Station 1", "img/work_station_1.png", 11);\
+INSERT INTO Room (ID, Name, IconPath, FloorID) VALUES (32, "Work Station 2", "img/work_station_2.png", 11);\
+\
+UPDATE Room SET SiteID = 2  WHERE ID = 5;\
+\
+UPDATE Room SET Name = 'Room 1'  WHERE ID = 7;\
+\
+ALTER TABLE Reservations ADD CONSTRAINT FK_Reservations FOREIGN KEY (RoomID) REFERENCES Room(ID);\
+\
+ALTER TABLE global_reservations ADD CONSTRAINT FK_Global_Reservations FOREIGN KEY (room) REFERENCES room(ID);\
+\
+ALTER TABLE global_reservations ADD manager TEXT AFTER Creator; \
+\
+DELIMITER ;;\
+CREATE PROCEDURE getSites()\
+BEGIN\
+SELECT * FROM site;\
+END;;\
+\
+//Version stored procedure en phpmyadmin\
+DELIMITER ;;\
+CREATE PROCEDURE getSites()\
+BEGIN\
+SELECT * FROM site;\
+END;;\
+\
+DELIMITER ;;\
+CREATE PROCEDURE getFloors(IN paramSiteID INT)\
+BEGIN\
+SELECT * FROM floor WHERE SiteID = paramSiteID;\
+END;;\
+\
+DELIMITER ;;\
+CREATE PROCEDURE getFloor(IN paramFloorID INT)\
+BEGIN\
+SELECT * FROM floor WHERE ID = paramFloorID;\
+END;;\
+\
+DELIMITER ;;\
+CREATE PROCEDURE getRooms(IN paramFloorID INT)\
+BEGIN\
+SELECT * FROM room WHERE FloorID = paramFloorID;\
+\pard\tx20800\pardeftab720
+\cf0 END;;\
+\
+\pard\pardeftab720
+\cf0 DELIMITER ;;\
+CREATE PROCEDURE getRoom(IN paramRoomID INT)\
+BEGIN\
+SELECT Name FROM room WHERE ID = paramRoomID;\
+\pard\tx20800\pardeftab720
+\cf0 END;;\
+\pard\pardeftab720
+\cf0 \
+DELIMITER //\
+CREATE PROCEDURE getCurrentDate()\
+BEGIN\
+SELECT CURDATE();\
+END//\
+\
+DELIMITER //\
+CREATE PROCEDURE getCurrentTime()\
+BEGIN\
+SELECT CURTIME();\
+END//\
+\
+\
+UPDATE global_reservations SET RoomID = 7  WHERE RoomID = 9;\
+UPDATE global_reservations SET RoomID = 8  WHERE RoomID = 10;\
+UPDATE global_reservations SET RoomID = 9  WHERE RoomID = 11;\
+\
+UPDATE room SET IconPath = 'img/fish-room.png'  WHERE id = 1;\
+UPDATE room SET IconPath = 'img/F1_R2.png' WHERE id = 2;\
+UPDATE room SET IconPath = ''img/F1_R3.png'  WHERE id = 3;\
+UPDATE room SET IconPath = ''img/F1_TrainingRoom.png'  WHERE id = 4;\
+\
+SELECT creator FROM reservations WHERE date between '2012-08-03' AND '2012-08-06';//\
+SELECT creator FROM reservations WHERE date between '2012-08-03 14:30' AND '2012-08-06 14:30';//\
+SELECT creator, roomID FROM global_reservations WHERE date between '2014-02-03' AND '2014-02-08';//\
+\
+\
+//change 3rd floor id\
+\
+DELIMITER ;;\
+CREATE PROCEDURE getReservations(IN paramRoomID INT, IN paramDate Date)\
+BEGIN\
+SELECT * FROM global_reservations WHERE Date(date) = paramDate AND room = paramRoomID order by date ASC;\
+END;;\
+\
+call getReservations(1,'2014-02-26');\
+\
+DELIMITER //\
+CREATE PROCEDURE SearchReservationInfo(IN paramID INT)\
+BEGIN\
+DECLARE roomID INT;\
+SELECT * FROM global_reservations WHERE id = paramID;\
+SELECT room INTO roomID FROM global_reservations WHERE id = paramID;\
+SELECT * FROM room WHERE id = roomID;\
+END//\
+\
+DELIMITER ;;\
+CREATE PROCEDURE GetNextAvailableBlock(IN paramRoomID INT,  IN paramStartDate DateTime, IN paramEndDate DateTime)\
+BEGIN\
+SELECT * FROM global_reservations WHERE date BETWEEN paramStartDate AND paramEndDate AND room = paramRoomID ORDER BY  date ASC;\
+SELECT Name FROM room WHERE id = paramRoomID;\
+END;;\
+\
+drop procedure GetNextAvailableBlock;\
+\
+call GetNextAvailableBlock(1, '2014-02-10 12:00:00', '2014-02-10 18:30:00');\
+\
+call GetNextAvailableBlock(1, '2014-02-17 07:30:00', '2014-02-17 18:30:00');\
+\
+\
+UPDATE room SET ID = 9  WHERE ID = 7;\
+UPDATE room SET ID = 10  WHERE ID = 8;\
+UPDATE room SET ID = 11  WHERE ID = 9;\
+\
+\
+\
+SELECT * FROM global_reservations WHERE date BETWEEN '2014-02-20 12:00:00' AND '2014-02-20 18:30:00' AND room = 1 ORDER BY DATE ASC;\
+\
+\
+\
+DELIMITER ;;\
+CREATE PROCEDURE RemoveReservation(IN paramReservationID INT, IN paramCreator TEXT)\
+BEGIN\
+IF EXISTS(SELECT id FROM global_reservations WHERE id = paramReservationID AND creator = paramCreator)\
+THEN\
+SELECT room, date, creator, manager FROM global_reservations WHERE id = paramReservationID;\
+DELETE FROM global_reservations WHERE id = paramReservationID;\
+ELSE\
+SELECT 0;\
+END IF;\
+END;;\
+\
+call RemoveReservation(22);\
+\
+DELIMITER ;;\
+CREATE PROCEDURE AddReservation(IN paramDescription TEXT, IN paramDate DATETIME, IN paramWeek INT, IN paramBlocks INT, IN paramCreator TEXT, IN paramManager TEXT, IN paramRoomID INT)\
+BEGIN\
+INSERT INTO global_reservations (description, date, week, blocks, creator, manager, password, room) VALUES (paramDescription, paramDate, paramWeek, paramBlocks, paramCreator, paramManager, (SELECT SUBSTRING(MD5(RAND()) FROM 1 FOR 6) AS password), paramRoomID);\
+SELECT LAST_INSERT_ID();\
+END;;\
+\
+DELIMITER ;;\
+CREATE PROCEDURE GetWeekDays(IN paramDate DATETIME)\
+BEGIN\
+SELECT DAYOFWEEK(paramDate);\
+END;;\
+\
+DELIMITER ;;\
+CREATE FUNCTION FIRST_DAY_OF_WEEK()\
+RETURNS DATE DETERMINISTIC\
+BEGIN\
+  RETURN SUBDATE(now(), WEEKDAY(now()));\
+END;;\
+DELIMITER ;\
+\
+DELIMITER ;;\
+CREATE PROCEDURE FIRST_DAY_OF_WEEK()\
+BEGIN\
+  SELECT SUBDATE(now(), WEEKDAY(now()));\
+END;;\
+DELIMITER ;\
+\
+SELECT FIRST_DAY_OF_WEEK();\
+\
+DELIMITER ;;\
+CREATE PROCEDURE LAST_DAY_OF_WEEK()\
+BEGIN\
+SELECT DATE(NOW() + INTERVAL (6 - DAYOFWEEK(NOW())) DAY);\
+END;;\
+DELIMITER ;\
+\
+}

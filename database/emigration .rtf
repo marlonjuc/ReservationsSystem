@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww18980\viewh11400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs36 \cf0 //Apply these changes on the PHPmyAdmin SQL Panel, just when emigration is necessary from meetings.bozdigital to prodigious.cr/meetings\
+\
+INSERT INTO floor (ID, Name, StylePath, SiteID) VALUES (10, 'Laptop', '', 1);\
+\
+\
+\
+INSERT INTO room (ID, Name, IconPath, FloorID) VALUES (7, 'Room 3', '', 2);\
+INSERT INTO room (ID, Name, IconPath, FloorID) VALUES (8, 'Room 4', '', 2);\
+\
+INSERT INTO room (ID, Name, IconPath, FloorID) VALUES (19, 'Laptop', '', 10);\
+\
+ALTER TABLE floor ADD CONSTRAINT FK_Floor FOREIGN KEY (siteID) REFERENCES site(ID);\
+\
+ALTER TABLE global_reservations ADD CONSTRAINT FK_Global_Reservations FOREIGN KEY (room) REFERENCES room(ID);\
+\
+ALTER TABLE global_reservations ADD manager TEXT AFTER Creator; \
+\
+\
+DROP TABLE category;\
+DROP TABLE events;\
+DROP TABLE members;\
+DROP TABLE reservations;\
+DROP TABLE reservations_2;\
+DROP TABLE theme;\
+DROP TABLE themes_by_category;\
+DROP TABLE themes_by_member;\
+\
+\
+\
+// on phpmyadmin change in Room 3 and Room 4 - in floor 2 to floor 10; not used\
+\
+\
+\
+\
+}

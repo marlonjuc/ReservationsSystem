@@ -1,0 +1,110 @@
+
+.header{
+    background-color:#d66b1b;
+}
+
+/*Table Style*/
+
+.db-table td{
+    border:1px solid #d66b1b;
+}
+
+.db-table th {
+    background-color:#d66b1b;
+}
+
+.db-table td.block {
+   background-color: #d66b1b;
+}
+
+#tableContainer tr:last-child .block{
+    border-bottom-color:#d66b1b;
+}
+
+caption{
+     background-color: #d66b1b;
+}
+
+/*Cells */
+
+.modify{
+    background: url('../img/ui/calendar/dark_orange_padlock.png') no-repeat; overflow: visible;
+    background-position: left 10px top 6px;
+    background-position-x: 10px;
+    background-position-y: 6px;
+}
+
+/*Info Panel */
+
+#infoPanel{
+    border:1px solid #d66b1b;
+}
+
+.infoPanelHeader{
+    background-color: #d66b1b;
+}
+
+.infoPanelFooter{
+    background-color: #d66b1b;
+}
+
+.output{
+    color: #d66b1b;
+    border: 1px solid #d66b1b;
+}
+
+.exclamation{
+    background: url('../img/ui/calendar/error/error_bridge.png') no-repeat;
+}
+
+/*Date Picker Style*/
+
+.ui-widget-content{
+    border: 1px solid #d66b1b;
+}
+
+.ui-widget-header{
+    border: 1px solid #d66b1b;
+    background-color: #d66b1b;
+}
+
+.ui-datepicker .ui-state-highlight{
+    background-color: #d66b1b;
+}
+
+/*Popup Window*/
+
+.button {   
+    background: #d66b1b;
+    border: 1px solid #d66b1b;    
+}
+
+.required{
+    color: #d66b1b;
+}
+
+#output{
+    color: #d66b1b;
+}
+
+.mobileWeekSelector{
+    background-color: #d66b1b;
+    border-color: #d66b1b;
+}
+
+/**
+* Responsive Design
+*
+* The iPhone 4 display is 320 by 480 points in size total. 
+* The status bar is 20 points high, 
+* and the tool bar at the bottom in 44 points high.
+*
+**/
+
+@media screen and (max-width: 640px) {
+    
+.modify{
+    background: url('../img/ui/calendar/dark_orange_padlock_mobile.png') no-repeat; overflow: visible;
+}
+
+}

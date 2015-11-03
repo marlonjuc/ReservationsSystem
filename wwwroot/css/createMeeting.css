@@ -1,0 +1,284 @@
+/*font face*/
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../fonts/GothamBook.eot');
+    src: url('../fonts/GothamBook.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamBook.woff') format('woff'),
+         url('../fonts/GothamBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('../fonts/GothamBold.eot');
+    src: url('../fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamBold.woff') format('woff'),
+         url('../fonts/GothamBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../fonts/GothamLight.eot');
+    src: url('../fonts/GothamLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamLight.woff') format('woff'),
+         url('../fonts/GothamLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../fonts/GothamMedium.eot');
+    src: url('../fonts/GothamMedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamMedium.woff') format('woff'),
+         url('../fonts/GothamMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Global Styles*/
+
+body {
+    background: #FFFFFF;
+    color: #6b5e51;
+    font-size: 1em;
+    font-family: "GothamBook", arial;
+    line-height: 1.4;
+}
+
+/*Popup  Window*/
+
+h3{
+    width:100%;
+    margin-bottom:20px;
+    font-family: "GothamBold", arial;
+    font-size:16px;
+    text-align:center;
+}
+
+#containerPopup{
+    width:545px;
+    float:left;
+    margin-top:50px;
+    margin-left:10px;
+    margin-bottom:10px;
+    margin-right:10px;
+    position:absolute;
+    top:0px;
+}
+
+/*CSS for submit button*/       
+
+.button {
+    
+    /*Remove iPhone/iPad Safari default styles on buttons*/
+    -webkit-appearance: none;
+    
+    width: 140px;
+    height: 40px;
+    margin-left:50px;
+    position:relative;
+    top:20px;
+    left:50px;
+    cursor: pointer;    
+    
+    float:left;
+    padding: 4px 5px;
+    font-family: "GothamBook", arial;
+    color: #FFFFFF;
+    letter-spacing:1px;
+    font-size: 14px;    
+    border: 1px solid #000000;    
+    margin-bottom: 15px;  
+      
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+    background: #f23f12;
+    -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+    0px 0px 0px 3px rgb(254, 254, 254),
+    0px 5px 3px 3px rgb(210, 210, 210);
+   -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+    0px 0px 0px 3px rgb(254, 254, 254),
+    0px 5px 3px 3px rgb(210, 210, 210);
+    box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+    0px 0px 0px 3px rgb(254, 254, 254),
+    0px 5px 3px 3px rgb(210, 210, 210);
+    -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    text-align:center;
+}
+            
+.button:hover{
+   /*box-shadow: 0 0 0 1px #FFFFFF inset;*/
+   text-shadow: 5px 5px 5px #2a2a2a;
+   
+   -webkit-box-shadow: 0 0 0 1px #FFFFFF inset,
+    0px 0px 0px 3px rgb(254, 254, 254),
+    0px 5px 3px 3px rgb(210, 210, 210);
+   -moz-box-shadow:0 0 0 1px #FFFFFF inset,
+    0px 0px 0px 3px rgb(254, 254, 254),
+    0px 5px 3px 3px rgb(210, 210, 210);
+    box-shadow:0 0 0 1px #FFFFFF inset,
+    0px 0px 0px 3px rgb(254, 254, 254),
+    0px 5px 3px 3px rgb(210, 210, 210);
+   
+}
+
+.lockButton{
+    width: 190px;
+    height: 70px;
+    position:relative;
+    top:-112px;
+    left:50px;
+    float:none;
+    z-index: 20;
+    background-color: #FFFFFF;
+    opacity:0.4;
+}
+
+/*Add Reservation / Popup Window*/
+
+fieldset{
+    width:500px;
+    padding-top:20px;
+}
+
+label{
+    float:left;
+    position: relative;
+    top:40px;
+    left:20px;
+}
+
+#fields label{
+    width: 125px;
+    float:left;
+    top:0px;
+    left:20px;
+    margin-right:40px;
+    font-family: "GothamBook", arial;
+    font-size:16px;
+}
+
+.required{
+    position:relative;
+    top:7px;
+    left:-20px;
+    float:right;
+    font-family: "GothamBook", arial;
+    font-size:16px;
+}
+
+input{
+    margin-bottom:15px;
+    width:300px;
+    height:20px;
+    font-family: "GothamBook", arial;
+    font-size:12px;
+}
+
+
+textarea{
+    margin-bottom:15px;
+    width:300px;
+    font-family: "GothamBook", arial;
+    font-size:12px;
+    resize: none;
+}
+
+select{
+    margin-bottom:15px;
+    width:300px;
+    height:25px;
+    font-family: "GothamBook", arial;
+    font-size:12px;
+    padding-top:4px;
+}
+
+option{
+    height:20px;
+}
+
+#output{
+     font-family: "GothamBook", arial;  
+     font-size:16px;
+     top:30px;
+     position:relative;
+     float:left;
+     width:100%;
+     text-align:center;
+}
+
+/**
+* Responsive Design
+*
+* The iPhone 4 display is 320 by 480 points in size total. 
+* The status bar is 20 points high, 
+* and the tool bar at the bottom in 44 points high.
+*
+**/
+
+@media screen and (max-width: 640px){
+
+/*iFrame shadow box / jee goo popup*/
+
+h3{
+    width:100%;
+    font-size:20px;
+}
+
+#fields label{
+    width: 175px;  
+    margin-right:0px;
+    font-size:20px;
+    top:5px;
+}
+
+input{ 
+    width:280px;
+    font-size:16px;
+    height:30px;
+}
+
+textarea{
+    width:290px;
+    font-size:16px;
+}
+
+select{   
+    width:297px;
+    height:35px;
+    font-size:16px;
+}
+
+option{
+    height:30px;
+}
+
+#output{
+     font-size:20px;
+}
+
+/*CSS for submit button*/       
+
+.button {
+    width: 170px;
+    height: 50px;
+    margin-left:60px;
+    left:0px;
+    font-size: 16px;    
+}
+
+
+}

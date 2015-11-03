@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/Reservations/!svn/ver/14/wwwroot/php
+END
+getSites.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Reservations/!svn/ver/1/wwwroot/php/getSites.php
+END
+removeReservation.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Reservations/!svn/ver/7/wwwroot/php/removeReservation.php
+END
+events.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/Reservations/!svn/ver/1/wwwroot/php/events.php
+END
+main.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/Reservations/!svn/ver/1/wwwroot/php/main.php
+END
+addReservation.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Reservations/!svn/ver/6/wwwroot/php/addReservation.php
+END
+getFloors.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/Reservations/!svn/ver/1/wwwroot/php/getFloors.php
+END
+getReservations.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Reservations/!svn/ver/10/wwwroot/php/getReservations.php
+END
+getCurrentTime.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Reservations/!svn/ver/14/wwwroot/php/getCurrentTime.php
+END
+getRooms.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Reservations/!svn/ver/1/wwwroot/php/getRooms.php
+END
+database_connection.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Reservations/!svn/ver/14/wwwroot/php/database_connection.php
+END
+getSpecificReservation.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Reservations/!svn/ver/6/wwwroot/php/getSpecificReservation.php
+END
+.DS_Store
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/Reservations/!svn/ver/1/wwwroot/php/.DS_Store
+END

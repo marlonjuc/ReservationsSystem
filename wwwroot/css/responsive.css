@@ -1,0 +1,382 @@
+/**
+* Responsive Design
+*
+* The iPhone 4 display is 320 by 480 points in size total. 
+* The status bar is 20 points high, 
+* and the tool bar at the bottom in 44 points high.
+*
+**/
+
+@media screen and (max-width: 640px){
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px){*/
+    
+/*Global Styles */
+
+h1{
+    font-size:48px;
+    width:230px;
+    margin-top:12px;
+}
+
+h2{
+    font-size:18px;
+    width:215px;
+    margin-top:22px;
+    line-height: 20px;
+}
+
+h4{
+    margin-bottom:30px;
+    font-size:15px;
+    line-height: 50px;
+}
+    
+/*Homepage Styles*/
+
+body{
+    width: 640px;
+}
+
+#wrapper{
+    width: 640px;
+    margin: 0 0;
+    margin-top:0;
+    border: 1px solid #000000;
+}
+
+.section{
+    height:100%;
+    margin-left:0;
+    width:100%;
+}
+
+.floor{
+    background-position: left 0px top 0px; 
+    width:640px;
+    height:80px;
+    text-align:center;
+    float:left;
+    position:relative;
+    cursor:pointer;
+    border-top: 2px solid  #FFFFFF;
+}
+
+.floor_1{
+   background:none;
+   background-color: #f23f12;
+}
+
+.floor_2{
+    background:none;
+    background-color:#bd0f0f;
+}
+
+.floor_3{
+    background:none;
+    background-color:#f99500;
+}
+
+.floor_4{
+    background:none;
+    background-color:#d66b1b;
+}
+
+.floor_5{
+    background:none;
+    background-color:#8bc731;
+    top:-248px;
+    /*top:-328px remove comments when doctors reservations needed;*/
+    left:0;
+}
+
+.floor_6{
+    background:none;
+    background-color:#562b89;
+    top:80px;
+     /*top:164px remove comments when doctors reservations needed;*/
+    left:0;
+}
+
+.floor_7{
+   background:none;
+   background-color:#b7198e;
+   top:80px;
+    /*top:164px remove comments when doctors reservations needed;*/
+   left:0;
+}
+
+.floor_8{
+   background:none;
+   background-color:#9a2046;
+   top:80px;
+    /*top:164px remove comments when doctors reservations needed;*/
+   left:0;
+}
+
+.floor_9{
+   background:none;
+   background-color:#00b5de;
+   top:-164px;
+   left:0;
+}
+
+.octagon {
+    border-image: url(../img/ui/homepage/button_mobile_border.png) 20 20 20 20 repeat;
+    border-width: 20px 20px 20px 20px;
+    border-image-width: 20px 20px 20px 20px;
+    display:inline-block;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:5px;
+    margin-top:9px;
+    line-height: 0px;
+    width:auto;
+}
+
+.section a, a:visited{
+    font-family: "GothamBold", arial;
+    font-size: 36px;
+    width:100%;
+    height:100%;
+    margin-top:18px;
+}
+
+.logo{
+    background: url('../img/ui/homepage/prodigious_latam_logo_mobile.png') no-repeat;
+    width:60%;
+    height:109px;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-left:20%;
+}
+
+.separator{
+    display:none;
+}
+
+.top_paint{
+    display:none;
+}
+
+.bottom_paint{
+    display:none;
+}
+
+.header{
+    height:90px;
+    opacity:0;
+}
+
+.headerIcon{
+    width:58px;
+    height: 52px;
+    background: url('../img/ui/calendar/header_icon_mobile.png') no-repeat;   
+    margin-top:18px;
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.homeIcon{
+  width:76px;
+  height:64px;
+  
+}
+
+
+/*DB Tables*/
+    
+#tableContainer{
+    position:relative;
+    top:0px;
+    left:5%;
+    width:90%;
+}
+
+.db-table{
+    font-family: "GothamBold", arial;
+}
+
+caption{  
+    height:45px;
+    font-family: "GothamBold", arial;
+    font-size:24px;
+    line-height:45px;
+}
+
+.db-table th {
+    font-size:22px;
+    line-height:100%;
+}
+
+.db-table td {
+    font-size:24px;
+    line-height:100%;
+}
+
+
+#container{
+    width:auto;
+    height:34px;
+    top:90px;
+}
+
+#infoPanel{
+    display:none;
+}
+
+/*Date Picker jQueryUI Widget*/
+
+#datepicker{
+    width:600px;
+}
+
+.ui-datepicker{
+    width:600px;
+}
+
+.ui-widget{
+    font-size:24px;
+}
+
+.ui-widget-header{
+    font-size:24px;
+    width:606px;
+}
+
+.ui-datepicker .ui-datepicker-prev{
+    background: url('../img/ui/calendar/prev_arrow_mobile.png') no-repeat;
+    background-position: left 2px top 2px;
+}
+
+.ui-datepicker .ui-datepicker-next{
+   background: url('../img/ui/calendar/next_arrow_mobile.png') no-repeat;
+   background-position: left 2px top 2px;
+}
+
+#carousel{
+   top:170px;
+   width:640px
+}
+
+/*DataBase HTML Tables*/
+
+.db-table th{
+    text-align:center;
+    height: 20px;
+    vertical-align:middle;
+}
+
+.db-table th img{
+    width:100%;
+    margin:0 auto;
+}
+
+.clock{
+    width:48px;
+    background:none;
+    background-position: left 0px top 0px;
+}
+
+/*Cells */
+
+.modify{
+    width:100%;
+}
+
+.add, .add-disabled{
+    width:100%;
+    background: url('../img/ui/calendar/add_icon_mobile.png') no-repeat; overflow: visible;
+    background-position: left 25% top 25%;
+}
+
+}
+
+/*
+ * 
+ * iPad Media Queries (All generations - including iPad mini) 
+ * iPad in portrait & landscape mode
+ *
+ */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+/*@media screen and (min-device-width : 768px){*/
+    
+h1{
+    font-size:26px;
+    margin-top:10px;
+}
+    
+h2{
+    width:200px;
+    font-size:20px;
+    float:left;
+    margin-top:12px;
+    line-height:20px;
+    margin-top:6px;
+}
+
+body{
+    width: 768px;
+}
+
+.header{
+    opacity:0;
+}
+
+#wrapper{
+   margin:none;
+   margin-top:25%;
+   width:768px;
+}
+
+.logo{
+     margin: 0 30%;
+}
+
+#container{
+  height:90%;
+}
+
+.section{
+   margin-left:25px;
+   width:auto;
+}
+
+.separator{
+    width:768px;
+}
+
+.top_paint{
+    left:0px;
+    position:absolute;
+    top:256px;
+}
+
+
+.bottom_paint{
+    left:485px;
+}
+
+.floor_5{
+    top:-82px;
+    left:284px;
+}
+
+.floor_6{
+    top:84px;
+    left:-426px;
+}
+
+.floor_7{
+    top:2px;
+    left:284px;
+}
+
+.floor_8{
+    top:2px;
+    left:284px;
+}
+ 
+ 
+}
